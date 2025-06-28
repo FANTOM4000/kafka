@@ -16,5 +16,7 @@ ENV KAFKA_TRANSACTION_STATE_LOG_MIN_ISR=1
 ENV KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS=0
 ENV KAFKA_NUM_PARTITIONS=3
 
+EXPOSE 9092 9093
+
 # Set environment variable to enable JAAS
 ENV KAFKA_OPTS="-Djava.security.auth.login.config=/etc/kafka/jaas.conf"
